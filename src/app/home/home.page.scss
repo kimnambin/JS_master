@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.homepage
+{
+position:absolute;
+
+height:844px;
+width:390px;
+padding:0px;
+// display: flex;
+// // align-items: center;
+// // justify-content: center;
+//background-image: url('../../assets/다운로드.png');
+}
+
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  // height: 70.83000183105469px;
+  height: 160px;
+  width: 375px;
+  padding: 0px;
+  left: 7px;
+  // top: 49px;
+  position: relative;
+  border-radius: 0px 0px 30px 30px; 
+  background-color: #F5E050;
+  // white-space: nowrap;
+  // vertical-align: middle;
+  // text-align: center;
+}
+
+
+
+.js1 {
+  height: 60px;
+  width: 60px;
+  left: 10px;
+  top:45px;
+  align-items: center;
+  //op: 10px;
+  position: absolute;
+  //border: solid black;
+}
+
+h2 {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  //color: #ffffff;
+  color:#000000;
+  font-size: 40px;
+  font-weight: 700;
+}
+// .list img,
+// .list h2 {
+//   vertical-align: middle; 
+//   margin: 0; 
+//   .js1, h2, .item-link-svg2 {
+//     vertical-align: middle; /* 수직 가운데 정렬 */
+//   }}
+
+.middle
+{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+height:400px;
+width:383px;
+padding:0px;
+left:7px;
+top:10px;
+position:relative;
+}
+
+.변수 {
+  height: 180px;
+  width: 180px;
+  border-radius: 40px;
+  left: 5px;
+  top: 48px;
+  position: absolute;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #E0FFFF;
+  //background-image: url('../../assets/nodejs.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.함수
+{
+height:180px;
+width:180px;
+border-radius:40px;
+left:185px;
+top:48px;
+position:absolute;
+background-color: #E0FFFF;
+font-family: 'Open Sans', sans-serif;
+  color: black;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  //background-image: url('../../assets/react.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.조건문
+{
+height:180px;
+width:180px;
+border-radius:40px;
+left:5px;
+top:229px;
+position:absolute;
+background-color: #E0FFFF;
+font-family: 'Open Sans', sans-serif;
+  color: black;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  //background-image: url('../../assets/angular.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.반복문
+{
+height:180px;
+width:180px;
+border-radius:40px;
+left:185px;
+top:229px;
+position:absolute;
+background-color: #E0FFFF;
+font-family: 'Open Sans', sans-serif;
+  color: WHITE;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  //background-image: url('../../assets/00.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.bottom
+{
+height:153px;
+width:400px;
+padding:0px;
+left:62px;
+top:170px;
+position:relative;
+}
+.js2
+{
+height:70px;
+width:82px;
+// left:40px;
+justify-content: center;
+align-items: center;
+top:0px;
+position:absolute;
+}
+.김남빈
+{
+color:#0f9df7;
+text-align:center;
+vertical-align:text-middle;
+font-size:20px;
+font-family:Inter;
+line-height:28px;
+border-style:hidden;
+outline:none;
+top:20px;
+left:26px;
+position:absolute;
+width:233.64999389648438px;
+}
+
+
+
+
+// .item→link→svg
+// {
+// height:30px;
+// width:1px;
+// padding:0px;
+// left:287px;
+// top:20.4px;
+// position:relative;
+// }
+
+.vector
+{
+background-color:#000000;
+height:23.3203125px;
+width:0.7343798875808716px;
+width:0.7343798875808716px;
+height:23.3203125px;
+left:0px;
+top:0px;
+position:absolute;
+}
+.item→link→svg2
+{
+height:30px;
+width:30px;
+padding:0px;
+left:180px;
+top:20.4px;
+position:relative;
+}
+.vector2
+{
+background-color:#000000;
+height:16.875px;
+width:20.625px;
+width:20.625px;
+height:16.875px;
+left:0px;
+top:0px;
+position:absolute;
+}
