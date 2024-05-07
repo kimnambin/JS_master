@@ -75,6 +75,7 @@ padding:0px;
 left:7px;
 top:10px;
 position:relative;
+//border: solid gray; 
 }
 
 .변수 {
@@ -89,9 +90,10 @@ position:relative;
   font-size: 25px;
   font-weight: 700;
   text-align: center;
-  background-color: #E0FFFF;
+  //background-color: #E0FFFF;
   //background-image: url('../../assets/nodejs.png');
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -104,7 +106,7 @@ border-radius:40px;
 left:185px;
 top:48px;
 position:absolute;
-background-color: #E0FFFF;
+//background-color: #E0FFFF;
 font-family: 'Open Sans', sans-serif;
   color: black;
   font-size: 25px;
@@ -123,7 +125,7 @@ border-radius:40px;
 left:5px;
 top:229px;
 position:absolute;
-background-color: #E0FFFF;
+//background-color: #E0FFFF;
 font-family: 'Open Sans', sans-serif;
   color: black;
   font-size: 25px;
@@ -142,7 +144,7 @@ border-radius:40px;
 left:185px;
 top:229px;
 position:absolute;
-background-color: #E0FFFF;
+//background-color: #E0FFFF;
 font-family: 'Open Sans', sans-serif;
   color: WHITE;
   font-size: 25px;
