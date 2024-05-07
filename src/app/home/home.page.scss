@@ -57,13 +57,33 @@ h2 {
   font-size: 40px;
   font-weight: 700;
 }
-// .list img,
-// .list h2 {
-//   vertical-align: middle; 
-//   margin: 0; 
-//   .js1, h2, .item-link-svg2 {
-//     vertical-align: middle; /* 수직 가운데 정렬 */
-//   }}
+
+.animation {
+  position: relative;
+  display: flex;
+  justify-content: flex-start; 
+  align-items: center;
+  height: 120px;
+  width: 100%;
+  margin-top: 60px;
+  overflow: hidden;
+}
+
+.ani-item {
+  flex: 0 0 50%;
+  transition: transform 0.5s ease;
+}
+
+.ani-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+
+
 
 .middle
 {
@@ -73,7 +93,7 @@ height:400px;
 width:383px;
 padding:0px;
 left:7px;
-top:10px;
+top:30px;
 position:relative;
 //border: solid gray; 
 }
@@ -89,14 +109,20 @@ position:relative;
   color: black;
   font-size: 25px;
   font-weight: 700;
-  text-align: center;
   //background-color: #E0FFFF;
   //background-image: url('../../assets/nodejs.png');
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+
+.js2 {
+  margin-bottom: 10px;
+}
+
+
 
 .함수
 {
@@ -146,7 +172,7 @@ top:229px;
 position:absolute;
 //background-color: #E0FFFF;
 font-family: 'Open Sans', sans-serif;
-  color: WHITE;
+  color: black;
   font-size: 25px;
   font-weight: 700;
   text-align: center;
@@ -163,7 +189,7 @@ height:153px;
 width:400px;
 padding:0px;
 left:62px;
-top:170px;
+top:30px;
 position:relative;
 }
 .js2
@@ -236,3 +262,8 @@ left:0px;
 top:0px;
 position:absolute;
 }
+
+/*.logo{
+  width: 25px;
+  height: 25px;
+}*/
