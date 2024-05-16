@@ -16,20 +16,20 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: 'study01',
-    loadChildren: () => import('./study01/study01.module').then( m => m.Study01PageModule)
+    path: 'tip01',
+    loadChildren: () => import('./tip01/tip01.module').then( m => m.Tip01PageModule)
   },
   {
-    path: 'study02',
-    loadChildren: () => import('./study02/study02.module').then( m => m.Study02PageModule)
+    path: 'tip02',
+    loadChildren: () => import('./tip02/tip02.module').then( m => m.Tip02PageModule)
   },
   {
-    path: 'study03',
-    loadChildren: () => import('./study03/study03.module').then( m => m.Study03PageModule)
+    path: 'tip03',
+    loadChildren: () => import('./tip03/tip03.module').then( m => m.Tip03PageModule)
   },
   {
-    path: 'study04',
-    loadChildren: () => import('./study04/study04.module').then( m => m.Study04PageModule)
+    path: 'free',
+    loadChildren: () => import('./free/free.module').then( m => m.FreePageModule)
   },
 ];
 

@@ -98,10 +98,10 @@ ion-button {
 //   position: relative;
 // }
 
-select{
+ion-select{
   background-color: rgba(51, 153, 51, 0.5);
   height: 38px;
-  width: 249px;
+  width: 343px;
   border-radius: 6px;
   padding: 0px;
   left: 18px;
@@ -134,15 +134,15 @@ select{
 }
 
 
-h1 {
+h3 {
     display: flex;
     vertical-align: middle;
-    margin: 10px;
+    margin: 20px;
     justify-content: center;
     align-items: center;
     font-family: 'Open Sans', sans-serif;
     color:rgba(51, 153, 51, 0.5);
-    font-size: 60px;
+    font-size: 45px;
     font-weight: 700;
   }
 

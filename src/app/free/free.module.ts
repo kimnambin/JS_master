@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { Study02PageRoutingModule } from './study02-routing.module';
+import { FreePageRoutingModule } from './free-routing.module';
 
-import { Study02Page } from './study02.page';
+import { FreePage } from './free.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    Study02PageRoutingModule
+    FreePageRoutingModule
   ],
-  declarations: [Study02Page]
+  declarations: [FreePage]
 })
-export class Study02PageModule {}
+export class FreePageModule {}
