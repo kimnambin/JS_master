@@ -1,13 +1,41 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>free</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">free</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div id='homepage' class='homepage'>
+    <!-- 맨 위 부분 -->
+    <div id='list' class='list'>
+      <div><a routerLink="/home"><span class="material-icons">arrow_back</span></a></div>
+      <div>
+        <h4>커뮤니티</h4></div>
+      <div></div>
+    </div>
+
+    <!-- 글 목록들 -->
+    <div id='mid' class='mid'>  
+     <ion-list>
+      <!-- <ion-item *ngFor="let v of data" (click)="showwrite(v)" class="v-text"> -->
+        <ion-item *ngFor="let v of data" (click)="openModal(v)" class="v-text">  
+        <div class="title">
+          <h3>▶{{v.title}}</h3>
+        </div>
+        <div class="details">
+          <p>내용 : {{v.content.substring(0, 10)}}...</p>
+          <p>{{v.time_stamp.substring(0, 10)}}</p>
+        </div>
+      </ion-item>
+      
+      
+     </ion-list>
+    </div>
+
+    <!-- 보여주는 부분 -->
+    <!-- <div id='main2' class='main2'> -->
+      <!-- <div *ngIf="selectedv">
+        <p>1️⃣번호: {{ selectedv.no }}</p>
+        <p>2️⃣훈련자: {{ selectedv.title }}</p>
+        <p>3️⃣내용: {{ selectedv.content }}</p>
+        <p>4️⃣시간: {{ selectedv.time_stamp }}</p> 
+      </div>  -->
+     <ion-button routerLink="/write" id="bottom-center-button">🖊️글쓰기</ion-button>
+      <!-- </div> -->
+    </div>
+ 
 </ion-content>

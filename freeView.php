@@ -18,7 +18,7 @@ if ($conn->connect_error) {
 }
 
 //데이터 가져오기
-$sql = "SELECT * FROM lifeTip";
+$sql = "SELECT * FROM free";
 $result  = $conn->query($sql);
 
 //결과를 배열로 반환
@@ -29,11 +29,22 @@ if ($result->num_rows > 0) {
     }
 }
 
+// // //20개씩 잘라서 반환해보기
+// $rows = array();
+// if ($result->num_rows > 0) {
+//     $cnt = 0;
+//     while ($row = $result->fetch_assoc()) {
+//         $rows[] = $row;
+//         $cnt++;
+//         if ($cnt >= 20) {
+//             break;
+//         }
+//     }
+// }
+
 //json 결과로 변환하여 출력
 header('Content-Type: application/json');
 echo json_encode($rows);
 
 // 데이터베이스 연결 종료
 $conn->close();
-
-// 생활팁 부분

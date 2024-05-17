@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.글쓰기
+{
+position:absolute;
+background-color:#f9f7d3;
+height:844px;
+width:390px;
+padding:0px;
+}
+
+.main
+{
+height:755px;
+width:390px;
+padding:0px;
+top:5px;
+position:relative;
+}
+.content
+{
+height:611px;
+width:390px;
+padding:0px;
+top:86px;
+position:relative;
+}
+
+.top
+{
+height:60px;
+width:390px;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+padding:0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    --border-radius: 15px;
+    --background: #DD0031;
+    --color: white
+}
+
+.bto ion-item {
+    --min-height: 750px;
+  }
+
+.bto {
+    --margin-top: 15px;
+  }
+
+  
+  ion-item.bto {
+    --min-height: 500px;
+  }
+  .bto ion-input {
+    pointer-events: auto;
+    touch-action: manipulation;
+  }
+  
+  
+

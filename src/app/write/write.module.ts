@@ -4,19 +4,20 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { FreePageRoutingModule } from './free-routing.module';
+import { WritePageRoutingModule } from './write-routing.module';
 
-import { FreePage } from './free.page';
+import { WritePage } from './write.page';
 import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    FreePageRoutingModule,
+    WritePageRoutingModule,
     HttpClientModule
   ],
-  declarations: [FreePage]
+  declarations: [WritePage]
 })
-export class FreePageModule {}
+export class WritePageModule {}

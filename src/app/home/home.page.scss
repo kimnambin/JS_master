@@ -1,17 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 .homepage
 {
 position:absolute;
-
+background-color: #F9F7D3;
 height:844px;
 width:390px;
 padding:0px;
-// display: flex;
-// // align-items: center;
-// // justify-content: center;
-//background-image: url('../../assets/다운로드.png');
 }
 
 
@@ -47,14 +45,14 @@ padding:0px;
   //border: solid black;
 }
 
-h2 {
+h4 {
   display: inline-block;
   vertical-align: middle;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Indie Flower', sans-serif;
   //color: #ffffff;
   color:#000000;
-  font-size: 40px;
+  font-size: 38px;
   font-weight: 700;
 }
 
@@ -83,18 +81,18 @@ h2 {
 
 
 
-
-
 .middle
 {
 display: grid;
 grid-template-columns: repeat(2, 1fr);
-height:400px;
-width:383px;
+height:350px;
+width:390px;
 padding:0px;
-left:7px;
+
 top:30px;
 position:relative;
+border-radius: 15px;
+background-color: white
 //border: solid gray; 
 }
 
@@ -107,7 +105,7 @@ position:relative;
   position: absolute;
   font-family: 'Open Sans', sans-serif;
   color: black;
-  font-size: 25px;
+  font-size: 21px;
   font-weight: 700;
   //background-color: #E0FFFF;
   //background-image: url('../../assets/nodejs.png');
@@ -135,7 +133,7 @@ position:absolute;
 //background-color: #E0FFFF;
 font-family: 'Open Sans', sans-serif;
   color: black;
-  font-size: 25px;
+  font-size: 21px;
   font-weight: 700;
   text-align: center;
   //background-image: url('../../assets/react.png');
@@ -154,7 +152,7 @@ position:absolute;
 //background-color: #E0FFFF;
 font-family: 'Open Sans', sans-serif;
   color: black;
-  font-size: 25px;
+  font-size: 21px;
   font-weight: 700;
   text-align: center;
   //background-image: url('../../assets/angular.png');
@@ -173,7 +171,7 @@ position:absolute;
 //background-color: #E0FFFF;
 font-family: 'Open Sans', sans-serif;
   color: black;
-  font-size: 25px;
+  font-size: 21px;
   font-weight: 700;
   text-align: center;
   //background-image: url('../../assets/00.png');

@@ -31,6 +31,16 @@ const routes: Routes = [
     path: 'free',
     loadChildren: () => import('./free/free.module').then( m => m.FreePageModule)
   },
+  {
+    path: 'write',
+    loadChildren: () => import('./write/write.module').then( m => m.WritePageModule)
+  },
+  {
+    path: 'modal',
+    loadChildren: () => import('./modal/modal.module').then( m => m.ModalPageModule)
+  },
+ 
+
 ];
 
 @NgModule({

@@ -24,3 +24,60 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+.custom-modal-class {
+    --width: 80%;
+    --height: 40%;
+    --border-radius: 10px;
+    --margin: auto;
+  }
+  
+  ion-modal.custom-modal-class {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  ion-modal.custom-modal-class .modal-wrapper {
+    width: var(--width);
+    height: var(--height);
+    border-radius: var(--border-radius);
+    margin: var(--margin);
+  }
+  
+  .custom-modal-class .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .custom-modal-class .content {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .custom-modal-class .time {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 20px;
+  }
+  
+  .custom-modal-class .btn {
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    display: flex;
+  }
+
+  .container {
+    width: 100%;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
