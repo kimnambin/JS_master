@@ -22,13 +22,15 @@ $sql = "SELECT * FROM free";
 $result  = $conn->query($sql);
 
 //결과를 배열로 반환
-// $rows = array();
+$rows = array();
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
         $rows[] = $row;
     }
 }
 
+// 배열을 역순으로 정렬(최근 게시글이 위로 가기 위함)
+$rows = array_reverse($rows);
 // // //20개씩 잘라서 반환해보기
 // $rows = array();
 // if ($result->num_rows > 0) {

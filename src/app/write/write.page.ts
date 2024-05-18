@@ -51,7 +51,13 @@ export class WritePage implements OnInit {
 
 
  }
-
+ freePage() {
+   // /free 페이지로 이동
+   this.router.navigateByUrl('/free');
+   // 현재 URL을 변경하고 페이지를 새로고침
+   history.pushState(null, '', '/free');
+   window.location.reload();
+}
   }
 
 

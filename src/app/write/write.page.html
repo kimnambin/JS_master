@@ -6,7 +6,7 @@
       
       <!-- freeform이 ts와 연결하는 부분 ngForm이 폼요소 이름임 -->
       <form (ngSubmit)="freeform()" #ngForm="ngForm">
-      <ion-button class="btn" type="submit" routerLink="/free">완료</ion-button>
+      <ion-button class="btn" type="submit" (click)="freePage()">완료</ion-button>
     </form>
     </div>
     <div id='main' class='main'>

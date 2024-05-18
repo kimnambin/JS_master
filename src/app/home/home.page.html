@@ -10,14 +10,31 @@
         <div id='homepage' class='homepage'>
 
           <div id='list' class='list'>
-        
             <div><img id='js1' class='js1' src='./assets/11.svg'></div>
-            <div><h4>잘 모르는 꿀팁</h4>
-            </div>
-            <div></div>
-              <!-- <img id='item→link→svg2' class='item→link→svg2' src='./assets/image.png'/> -->
+            <div><h4>알씁신잡</h4></div><div></div>
               </div>
-        
+
+              <!-- <div class="search">
+                <ion-item>
+                  <span class="material-icons">search</span>
+                <ion-input placeholder="궁금한 내용을 검색해보세요!!" type="text" name="search" class="input_search"></ion-input></ion-item>
+                <div></div>
+            </div> -->
+
+            <ion-item>
+              <span class="material-icons">search</span>
+              <ion-input [(ngModel)]="searchInputValue" placeholder="검색어를 입력하세요"></ion-input>
+              <ion-button (click)="performSearch()">검색</ion-button>
+            </ion-item>
+            
+            <!-- 검색 결과 -->
+            <div *ngIf="searchResults.length > 0">
+              <h2>검색 결과:</h2>
+              <ul>
+                <li *ngFor="let result of searchResults">{{ result | json }}</li>
+              </ul>
+            </div>
+            
 
               <div class="animation">
                 <div class="ani-item" #aniItem>
