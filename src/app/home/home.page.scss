@@ -3,6 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+$font-family: 'Poetsen One', sans-serif;
+$font-family-fallback: 'Noto Sans KR', sans-serif; // 한글 대체 폰트 설정
+
 
 .homepage
 {
@@ -50,8 +55,7 @@ h4 {
   display: inline-block;
   vertical-align: middle;
   margin: 0;
-  font-family: 'Indie Flower', sans-serif;
-  //color: #ffffff;
+  font-family: #{$font-family}, #{$font-family-fallback}; // 폰트 패밀리와 대체 폰트 설정  //color: #ffffff;
   color:#000000;
   font-size: 32px;
   font-weight: 700;

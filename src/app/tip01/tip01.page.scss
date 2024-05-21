@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
 
 .homepage {
   position: absolute;
@@ -175,8 +177,8 @@ h3 {
   }
 
   //제목
-  .ptitle{
-    font-family: RixInooAriDuriR;
+  .ptitle {
+    font-family: 'Poetsen One', sans-serif;
   }
 
   //내용
