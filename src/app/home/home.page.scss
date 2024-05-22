@@ -55,10 +55,10 @@ h4 {
   display: inline-block;
   vertical-align: middle;
   margin: 0;
-  font-family: #{$font-family}, #{$font-family-fallback}; // 폰트 패밀리와 대체 폰트 설정  //color: #ffffff;
-  color:#000000;
-  font-size: 32px;
-  font-weight: 700;
+  font-family: #{$font-family}, #{$font-family-fallback}; 
+  color:#ffffff;
+  font-size: 48px;
+  font-weight: 10000;
 }
 
 .animation {
@@ -108,7 +108,7 @@ background-color: white
   left: 5px;
   top: 48px;
   position: absolute;
-  font-family: 'Open Sans', sans-serif;
+  font-family: #{$font-family}, #{$font-family-fallback}; 
   color: black;
   font-size: 21px;
   font-weight: 700;
@@ -135,8 +135,7 @@ border-radius:40px;
 left:185px;
 top:48px;
 position:absolute;
-//background-color: #E0FFFF;
-font-family: 'Open Sans', sans-serif;
+font-family: #{$font-family}, #{$font-family-fallback}; 
   color: black;
   font-size: 21px;
   font-weight: 700;
@@ -154,8 +153,7 @@ border-radius:40px;
 left:5px;
 top:229px;
 position:absolute;
-//background-color: #E0FFFF;
-font-family: 'Open Sans', sans-serif;
+font-family: #{$font-family}, #{$font-family-fallback}; 
   color: black;
   font-size: 21px;
   font-weight: 700;
@@ -173,8 +171,7 @@ border-radius:40px;
 left:185px;
 top:229px;
 position:absolute;
-//background-color: #E0FFFF;
-font-family: 'Open Sans', sans-serif;
+font-family: #{$font-family}, #{$font-family-fallback}; 
   color: black;
   font-size: 21px;
   font-weight: 700;

@@ -1,16 +1,19 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>검색 결과</ion-title>
-    <ion-buttons slot="end">
-      <ion-button (click)="dismiss()">닫기</ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="custom-modal-class">
+  <div class="bnt-con"><ion-button class="btn" (click)="dismiss()"><span class='material-icons'>close</span></ion-button></div>
+    <div class="container" *ngFor="let result of searchResults">
+      
+          <p class="title">{{ result.title }}</p>
+          <hr>
+          <p class="content">{{ result.content }}</p>
+          <hr>
+          <img [src]="result.imgUrl">
+    </div>
+   
+ 
 
-<ion-content>
-  <ion-list>
-    <ion-item *ngFor="let result of searchResults">
-      {{ result | json }}
-    </ion-item>
-  </ion-list>
+  <div *ngIf="!searchResults || searchResults.length === 0" class="no-results">
+    <img src="./assets/noresult.png" />
+    <p>원하는 글이 없다면 직접 남겨보세요 👇👇</p><br>
+    <ion-button expand="full" routerLink="/write">글 쓰러 가기</ion-button>
+  </div>
 </ion-content>

@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+$font-family: 'Poetsen One', sans-serif;
+$font-family-fallback: 'Noto Sans KR', sans-serif; // 한글 대체 폰트 설정
 
 .글쓰기
 {

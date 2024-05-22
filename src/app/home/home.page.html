@@ -28,12 +28,12 @@
             </ion-item>
             
             <!-- 검색 결과 -->
-            <div *ngIf="searchResults.length > 0">
+            <!-- <div *ngIf="searchResults.length > 0">
               <h2>검색 결과:</h2>
               <ul>
                 <li *ngFor="let result of searchResults">{{ result | json }}</li>
               </ul>
-            </div>
+            </div> -->
             
 
               <div class="animation">
@@ -55,24 +55,32 @@
 
             <div id='middle' class='middle'>
            <ion-botton routerLink="/tip01" class="변수">
-           <img id='js2' class='js2' src='./assets/life.jpg'/>생활</ion-botton>
+           <img id='js2' class='js2' src='./assets/life.jpg'/><p>
+            Life
+           </p></ion-botton>
            
             <ion-botton routerLink="/tip02" class="함수">
-              <img id='js2' class='js2' src='./assets/health.jpg'/>건강</ion-botton>
+              <img id='js2' class='js2' src='./assets/health.jpg'/><p>
+                Health
+              </p></ion-botton>
 
            <ion-botton routerLink="/tip03" class="조건문">
-            <img id='js2' class='js2' src='./assets/money.jpg'/>절약
+            <img id='js2' class='js2' src='./assets/money.jpg'/><p>
+              Money
+            </p>
            </ion-botton>
           
            <ion-botton routerLink="/free" class="반복문">
-             <img id='js2' class='js2' src='./assets/free.webp'/>커뮤니티
+             <img id='js2' class='js2' src='./assets/free.webp'/><p>
+              Community
+             </p>
             </ion-botton>
             
           </div>
 
             <div id='bottom' class='bottom'>
                 <div id='김남빈' class='김남빈'>
-                20190686 김남빈
+                  <p>20190686 김남빈</p>
               </div>
                 </div>
             </div>
