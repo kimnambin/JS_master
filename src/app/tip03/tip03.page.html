@@ -9,22 +9,24 @@
 
     <h3></h3>
 
-    <!-- 고르는 부분 -->
-    <div id='mid' class='mid'>  
-      <!-- <ion-select [(ngModel)]="selectedItem">
+     <!-- 고르는 부분 -->
+     <div id='mid' class='mid'>  
+      <ion-select [(ngModel)]="selectedItem" placeholder="이곳을 클릭해 보세요" class="custom-select">
         <ion-select-option *ngFor="let item of data" [value]="item">{{ item.title }}</ion-select-option>
-      </ion-select> -->
+      </ion-select>
       <!-- <div id='input' class='input'><ion-button>조회</ion-button></div> -->
     </div>
 
     <!-- 보여주는 부분 -->
     <div id='main2' class='main2'>
       <div id='background-border' class='background-border'>
-        <!-- <div *ngIf="selectedItem" id='contents1' class='contents1'>
-          <p>제목: {{ selectedItem.title}}</p>
-          <p> {{ selectedItem.content}}</p> 
-        </div>-->
-     
+        <div *ngIf="selectedItem" id='contents1' class='contents1'>
+          <p>제목: <span class="ptitle">{{selectedItem.title}}</span> </p>
+          <p class="pcontent"> {{ selectedItem.content}}</p>
+          <!--<img src="assets/lifeImg/t01.jpg" alt="Image"> 
+          <img [src]="imgUrl" alt="Image">-->
+          <img [src]="selectedItem.imgUrl" alt="Image" class="imgsize">
+        </div>
     
      </div>
       </div>

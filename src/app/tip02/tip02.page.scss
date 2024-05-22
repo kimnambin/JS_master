@@ -103,7 +103,9 @@ ion-button {
 // }
 
 ion-select{
-  background-color: #61DAFB;
+  --background: RGB(206, 179, 65);
+  --border-radius: 50px;
+  --padding: 0px;
   height: 38px;
   width: 343px;
   border-radius: 6px;
@@ -111,6 +113,18 @@ ion-select{
   left: 18px;
   top: 20px;
   position: relative;    
+}
+
+.custom-select {
+  --placeholder-color: transparent;
+  text-align: center;
+}
+
+.custom-select::part(placeholder) {
+  color: black; /* Set this to your desired placeholder color */
+  display: block;
+  margin-left: 82px;
+  width: 50%;
 }
 
 .main2 {
@@ -125,7 +139,7 @@ ion-select{
   background-color: white;
   height: 491px;
   width: 343px;
-  border-radius: 6px;
+  border-radius: 50px;
   padding: 0px;
   left: 17px;
   top: -60px;

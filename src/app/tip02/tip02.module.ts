@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { Tip02PageRoutingModule } from './tip02-routing.module';
 
 import { Tip02Page } from './tip02.page';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    Tip02PageRoutingModule
+    Tip02PageRoutingModule,
+    HttpClientModule
   ],
   declarations: [Tip02Page]
 })
