@@ -13,7 +13,7 @@
     <!-- 고르는 부분 -->
     <div id='mid' class='mid'>  
       <ion-select [(ngModel)]="selectedItem" placeholder="이곳을 클릭해 보세요" class="custom-select">
-        <ion-select-option *ngFor="let item of data" [value]="item">{{ item.title }}</ion-select-option>
+        <ion-select-option *ngFor="let item of data" [value]="item" class="custom-option">{{ item.title }}</ion-select-option>
       </ion-select>
       <!-- <div id='input' class='input'><ion-button>조회</ion-button></div> -->
     </div>
