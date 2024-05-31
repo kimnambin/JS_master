@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
 
 $font-family: 'Poetsen One', sans-serif;
@@ -9,20 +9,26 @@ $font-family-fallback: 'Noto Sans KR', sans-serif; // 한글 대체 폰트 설�
 .homepage {
   position: absolute;
   background-color: #F9F7D3;
-  height: 844px;
-  width: 390px;
+  height: 70vh; 
+  width: 100vw; 
   padding: 0px;
 }
 
+@media screen and (max-width: 1440px) {
+  .homepage,.mid ,.mid2  {
+    height: auto;
+    width: 100%;
+    //padding: 10px;
+  }
+}
 .list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 160px;
-  width: 375px;
+  width: 100vw;
   padding: 0px;
-  left: 7px;
   position: relative;
   border-radius: 0px 0px 30px 30px;
   background-color: #F5E050;
@@ -47,22 +53,26 @@ h4 {
 
 .mid {
   height: 138px;
-  width: 383px;
+  width: 100vw;
   padding: 0px;
-  left: 11px;
+  // left: 11px;
+  right: 10px;
   top: -20px;
   position: relative;
 }
 
+
+
 .contents1,
 .contents2,
 .contents3 {
-  // background-color: #d9d9d9;
+  //background-color: #d9d9d9;
   height: 97px;
   width: 303px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  
 }
 
 
@@ -79,7 +89,7 @@ h4 {
 }
 
 ion-button {
-    --background: rgba(51, 153, 51, 0.5);
+    --background: RGB(206, 179, 65);
     --height: 48px;
     --width: 68px;
     --border-radius: 6px;
@@ -103,35 +113,49 @@ ion-button {
 // }
 
 ion-select{
+  // --background: RGB(206, 179, 65);
   --background: #ece6cc;
   --border-radius: 50px;
   --padding: 0px;
+  --text-align : center;
   height: 38px;
   width: 343px;
-  border-radius: 6px;
-  padding: 0px;
   left: 18px;
+  right: 19px;
   top: 20px;
   position: relative;    
 }
 
 .custom-select {
   --placeholder-color: transparent;
-  text-align: center;
+  --text-align: center;
 }
 
-.custom-select::part(placeholder) {
-  color: black; /* Set this to your desired placeholder color */
+.custom-select::part(placeholder),s_option {
+  color: black; 
   display: block;
   margin-left: 82px;
   width: 50%;
+}
+
+::ng-deep .custom-option {
+  color: black;
+  display: block;
+  margin-left: 82px;
+  width: 50%;
+  position: absolute;
+}
+
+.custom-select .select-text {
+  width: 100%;
+  text-align: center;
 }
 
 .main2 {
   height: 543px;
   width: 377px;
   padding: 0px;
-  left: 11px;
+  right: 11px;
   position: relative;
 }
 
@@ -142,6 +166,7 @@ ion-select{
   border-radius: 50px;
   padding: 0px;
   left: 17px;
+  right: 17px;
   top: -60px;
   position: relative;
 }
@@ -159,7 +184,7 @@ h3 {
     justify-content: center;
     align-items: center;
     font-family: 'Open Sans', sans-serif;
-    color:#61DAFB;
+    color:rgba(51, 153, 51, 0.5);
     font-size: 45px;
     font-weight: 700;
   }
@@ -186,4 +211,18 @@ h3 {
 
   button:hover {
     background-color: #0056b3;
+  }
+
+  .imgsize{
+    margin-top: 50px;
+  }
+
+  //제목
+  .ptitle {
+    font-family: 'Poetsen One', sans-serif;
+  }
+
+  //내용
+  .pcontent{
+    font-size: 14px;
   }
