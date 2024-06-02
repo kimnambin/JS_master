@@ -1,4 +1,4 @@
-# TMI
+# 📱TMI
 <!--🅱️https://nanifood.tistory.com/44 -->
 
 <!--<div style="display: flex; justify-content: space-between;">
@@ -31,14 +31,15 @@
 <div class= "contanier" style="display:flex; flex-direction:row;">
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+  <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white">
 </div>
  <br>
  
  - Back
 <div class= "contanier" style="display:flex; flex-direction:row;">
-   <img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white">
-    <img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white">
+   <img src="https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white">
+    <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white">
+   <img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white">
 </div>
     
 
@@ -47,8 +48,8 @@
 1명
 
 ## 📌 구현 내용
-- 로그인/회원가입 구현
-- 게시글/스토리 업로드
-- 간단한 채팅 가능
+- 검색기능 구현
+- 정보 보기
+- 글작성 및 실시간 업로드
 
 
